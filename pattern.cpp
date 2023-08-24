@@ -304,6 +304,42 @@ E F G H I
 1234321
 123454321
 */
+    /*------------------------------------------------------------------*/
 
+    int n;
+    cin >> n;
+    for (int row = 1; row <= n; row++)
+    {
+        for (int cols = 1; cols <= n - row + 1; cols++)
+        {
+            cout << cols << " ";
+        }
+        for (int cols = 2; cols <= row; cols++)
+        {
+            cout << "*"
+                 << " ";
+        }
+        int start = row - 1;
+        while (start)
+        {
+            cout << "*"
+                 << " ";
+            start--;
+        }
+        for (int cols = 1; cols <= n - row + 1; cols++)
+        {
+            cout << n - cols + 1 << " ";
+        }
+        cout << endl;
+    }
+  
+/*
+----Output----
+1 2 3 4 5 5 4 3 2 1
+1 2 3 4 * * 5 4 3 2
+1 2 3 * * * * 5 4 3
+1 2 * * * * * * 5 4
+1 * * * * * * * * 5
+*/
     return 0;
 }
