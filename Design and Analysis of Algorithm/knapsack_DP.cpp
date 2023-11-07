@@ -1,4 +1,3 @@
-// A Dynamic Programming based solution for 0-1 Knapsack problem
 #include <stdio.h>
 
 // A utility function that returns maximum of two integers
@@ -14,8 +13,8 @@ int main()
 {
 	int i,j,w,k;
 	int sw=0,sp=0;
-	int val[] = {15,10,9,5};
-	int wt[] = {1,5,3,4};
+	int val[] = {10,15,36,20,12};
+	int wt[] = {1,2,5,3,2};
 	int W = 8;
 	int n = sizeof(val) / sizeof(val[0]);
 	int K[n+1][W+1];
@@ -72,4 +71,3 @@ int main()
 	
 	return 0;
 }
-

@@ -44,7 +44,7 @@ int main() {
       scanf("%f %f", &weight[i], &profit[i]);
    }
  
-   printf("\nEnter the capacityacity of knapsack:- ");
+   printf("\nEnter the capacity of knapsack:- ");
    scanf("%f", &capacity);
  
    for (i = 0; i < num; i++) {
