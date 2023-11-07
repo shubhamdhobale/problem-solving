@@ -1,1 +1,1 @@
-# DSA-practise
+# Problem-Solving
